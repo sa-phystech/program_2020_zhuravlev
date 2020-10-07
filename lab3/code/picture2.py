@@ -48,7 +48,7 @@ def draw(k, x0, housecolor, windowtype, rooftype, roofcolor):
     house(k, x0, housecolor, windowtype, rooftype, roofcolor)
     tree(k, x0)
     
-
+frames = []
 x0 = 20
 y0 = 700
 x = 200
@@ -84,6 +84,9 @@ while not finished:
         draw(k1[i], x0, housecolor[i], windowtype[i], rooftype[i], roofcolor[i])
         x0 = x0 + 70*k1[i]
     x0 = 20
+
+
+
     pygame.display.update()
     clock.tick(FPS)
     for event in pygame.event.get():
